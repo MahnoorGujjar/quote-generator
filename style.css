@@ -1,0 +1,147 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; /* Ensure proper font family */
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chocolate; /* Background color for the whole page */
+    height: 100vh; /* Make the body take full viewport height */
+    text-transform: capitalize;
+    padding: 10px; /* Add some padding for smaller screens */
+}
+
+/* Container box styling */
+.container {
+    width: 550px; /* Fixed width for the container */
+    height: auto; /* Height adjusts according to content */
+    background-color: white; /* White background for the container */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Black box shadow with some blur */
+    padding: 20px; /* Padding inside the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centering header */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    font-weight: 400;
+    color: #333;
+    line-height: 3;
+}
+
+/* Content box styling */
+.content {
+    width: 100%;
+    height: auto;
+    padding: 30px 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 35px 40px rgba(0, 0, 0, 0.2); /* Light shadow */
+    margin-bottom: 20px;
+}
+
+/* Text area styling */
+.text-area {
+    text-align: center;
+    font-size: 25px;
+    color: #000;
+    line-height: 1.5;
+}
+
+/* Writer styling */
+.content .writer {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+/* Button styling */
+button {
+    background-color: #262626;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: deepskyblue;
+    color: #000;
+}
+
+/* Responsive styles for smaller screens (less than 600px width) */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px; /* Reduce padding on small screens */
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #para {
+        font-size: 18px; /* Smaller font size for paragraphs */
+    }
+
+    .content {
+        padding: 20px; /* Smaller padding for content box */
+    }
+
+    .text-area {
+        font-size: 20px; /* Smaller font size for text area */
+    }
+
+    .content .writer {
+        font-size: 20px; /* Smaller font size for writer */
+    }
+
+    button {
+        width: 100%; /* Full-width button on small screens */
+        padding: 12px;
+        font-size: 14px; /* Smaller font size for button */
+    }
+}
+
+/* Additional responsive styling for very small screens (less than 400px width) */
+@media only screen and (max-width: 400px) {
+    .content {
+        padding: 15px; /* Smaller padding for content box */
+    }
+
+    .text-area {
+        font-size: 18px; /* Even smaller text */
+    }
+
+    .content .writer {
+        font-size: 18px; /* Smaller font for the writer */
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px; /* Adjust font size */
+    }
+}
